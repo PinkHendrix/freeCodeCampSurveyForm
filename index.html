@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purple Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Purple Survey Form</h1>
+    <p id="description">Please fill out the form when you get a chance, no worries m8</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Name: <input type="text" id="name" placeholder="Your Name" required></label>
+        <label id="email-label">Enter Your Email: <input type="email" id="email" placeholder="Email" required></label>
+        <label id="number-label">Enter a Number: <input type="number" id="number" min="-5" max="555" placeholder="Number" required></label>
+        </fieldset>
+        <fieldset>Favorite Candy:
+          <label>
+            <select id="dropdown">
+              <option value "">(select one)</option>
+              <option value "1">Pie</option>
+              <option value "2">Icecream</option>
+              <option value "3">Twix</option>
+            </select>
+            </label>
+          </fieldset>
+          <fieldset>Favorite Scenery:
+            <label><input type="radio" name="nature" value="6"> Mountain</label>
+              <label><input type="radio" name="nature" value="7"> River</label> 
+              <label><input type="radio" name="nature" value="8"> Ocean</label>
+        </fieldset>
+        <fieldset>Favorite Number(s):
+          <label><input type="checkbox" value="88"> 88</label>
+          <label><input type="checkbox" value="22"> 22</label>
+          <label><input type="checkbox" value="33"> 33</label>
+        </fieldset>
+        <fieldset>
+          <label>Any other Comments:
+          <textarea name="bio" rows="3" cols="30" placeholder="I love music..."></textarea>
+			  </label>
+        </fieldset>
+        <input id ="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
